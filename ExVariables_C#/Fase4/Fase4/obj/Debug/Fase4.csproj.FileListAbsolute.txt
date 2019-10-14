@@ -1,0 +1,10 @@
+/Users/usuarideprova/Projects/Fase4/Fase4/obj/Debug/Fase4.csprojAssemblyReference.cache
+/Users/usuarideprova/Projects/Fase4/Fase4/bin/Debug/Fase4.exe
+/Users/usuarideprova/Projects/Fase4/Fase4/bin/Debug/Fase4.pdb
+/Users/usuarideprova/Projects/Fase4/Fase4/obj/Debug/Fase4.exe
+/Users/usuarideprova/Projects/Fase4/Fase4/obj/Debug/Fase4.pdb
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExVariables_C#\Fase4\Fase4\bin\Debug\Fase4.exe
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExVariables_C#\Fase4\Fase4\bin\Debug\Fase4.pdb
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExVariables_C#\Fase4\Fase4\obj\Debug\Fase4.csprojAssemblyReference.cache
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExVariables_C#\Fase4\Fase4\obj\Debug\Fase4.exe
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExVariables_C#\Fase4\Fase4\obj\Debug\Fase4.pdb

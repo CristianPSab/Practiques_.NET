@@ -1,0 +1,15 @@
+/Users/usuarideprova/Projects/Fase2/Fase2/bin/Debug/Fase2.exe
+/Users/usuarideprova/Projects/Fase2/Fase2/bin/Debug/Fase2.pdb
+/Users/usuarideprova/Projects/Fase2/Fase2/obj/Debug/Fase2.csprojAssemblyReference.cache
+/Users/usuarideprova/Projects/Fase2/Fase2/obj/Debug/Fase2.exe
+/Users/usuarideprova/Projects/Fase2/Fase2/obj/Debug/Fase2.pdb
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExVariables_C#\Fase2\Fase2\bin\Debug\Fase2.exe
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExVariables_C#\Fase2\Fase2\bin\Debug\Fase2.pdb
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExVariables_C#\Fase2\Fase2\obj\Debug\Fase2.csprojAssemblyReference.cache
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExVariables_C#\Fase2\Fase2\obj\Debug\Fase2.exe
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExVariables_C#\Fase2\Fase2\obj\Debug\Fase2.pdb
+C:\Users\formacio\source\Exercicis .NET\repos\ExVariables_C#\Fase2\Fase2\bin\Debug\Fase2.exe
+C:\Users\formacio\source\Exercicis .NET\repos\ExVariables_C#\Fase2\Fase2\bin\Debug\Fase2.pdb
+C:\Users\formacio\source\Exercicis .NET\repos\ExVariables_C#\Fase2\Fase2\obj\Debug\Fase2.csprojAssemblyReference.cache
+C:\Users\formacio\source\Exercicis .NET\repos\ExVariables_C#\Fase2\Fase2\obj\Debug\Fase2.exe
+C:\Users\formacio\source\Exercicis .NET\repos\ExVariables_C#\Fase2\Fase2\obj\Debug\Fase2.pdb

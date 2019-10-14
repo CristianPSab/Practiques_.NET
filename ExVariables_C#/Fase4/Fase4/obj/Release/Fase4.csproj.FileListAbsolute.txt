@@ -1,0 +1,2 @@
+C:\Users\formacio\source\Exercicis .NET\repos\ExVariables_C#\Fase4\Fase4\bin\Release\Fase4.exe
+C:\Users\formacio\source\Exercicis .NET\repos\ExVariables_C#\Fase4\Fase4\obj\Release\Fase4.exe

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fase 3</title>
+</head>
+<body>
+    <script>
+            //FASE 3
+                const anyInicial = 1948;
+                const anyTraspas = 4;
+                document.writeln("FASE 3<br /><br />");
+
+                
+                var esTraspas = "Aquest any és de traspàs";
+                var noEsTraspas = "Aquest any no és de traspàs";
+
+                var anyNaixTras = true;
+                var any = 1984;
+                var i = anyInicial;
+
+                for (; i <= any; i++) {
+
+                    anyNaixTras = i % anyTraspas == 0 && i % 100 != 0 || i % 400 == 0;
+
+                    if (anyNaixTras) {
+                        document.writeln(i + "<br /><br />");
+                        document.writeln(esTraspas + "<br /><br />");
+                    }
+                    else {
+                        document.writeln(i + "<br /><br />");
+                        document.writeln(noEsTraspas + "<br /><br />");
+                    }
+                }
+    </script>
+</body>
+</html>

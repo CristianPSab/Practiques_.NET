@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fase 4</title>
+</head>
+<body>
+    <script>
+    
+    
+
+        document.writeln("FASE 4<br /><br />");
+
+        const anyInicial = 1948;
+        const anyTraspas = 4;
+
+        var nom = "Cristian\t";
+        var cognom1 = "Puntí\t";
+        var cognom2 = "Sabatés\t";
+
+
+        var dia = 25;
+        var mes = 9;
+        var any = 1984;
+
+        var i = anyInicial;
+        var anyNaixTras = true;
+
+        var nomCognoms = nom + cognom1 + cognom2 + "<br />";
+        var dataNaix = dia + "/" + mes + "/" + any + "<br />";
+
+        anyNaixTras = any % anyTraspas == 0 && i % 100 != 0 || i % 400 == 0;
+
+        document.writeln("El meu nom és " + nomCognoms);
+        document.writeln("Vaig néixer el " + dataNaix);
+
+        if (anyNaixTras) {
+            document.writeln("El meu any de naixement és de traspàs");
+        }
+        else {
+            document.writeln("El meu any de naixement no és de traspàs");
+        }
+
+    </script>
+    
+</body>
+</html>

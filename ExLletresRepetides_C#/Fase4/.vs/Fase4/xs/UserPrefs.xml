@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{59940429-A4F8-4CA1-BC45-A7C2F5E63932}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Fase4/Program.cs">
+    <Files>
+      <File FileName="Fase4/Program.cs" Line="20" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Fase4" expanded="True">
+            <Node name="Fase4" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.ItemProperties.Fase4 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

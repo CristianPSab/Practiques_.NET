@@ -1,0 +1,5 @@
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExLletresRepetides_C#\Fase2\Fase2\bin\Debug\Fase2.exe
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExLletresRepetides_C#\Fase2\Fase2\bin\Debug\Fase2.pdb
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExLletresRepetides_C#\Fase2\Fase2\obj\Debug\Fase2.csprojAssemblyReference.cache
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExLletresRepetides_C#\Fase2\Fase2\obj\Debug\Fase2.exe
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExLletresRepetides_C#\Fase2\Fase2\obj\Debug\Fase2.pdb

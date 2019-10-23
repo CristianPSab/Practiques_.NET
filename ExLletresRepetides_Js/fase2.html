@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fase 2</title>
+</head>
+<body>
+    <script>
+      //FASE 2
+
+        document.writeln("FASE 2<br /><br />");
+        
+        var  nom = [];
+
+        nom.push('c');
+        nom.push('r');
+        nom.push('i');
+        nom.push('s');
+        nom.push('t');
+        nom.push('i');
+        nom.push('a');
+        nom.push('n');
+        nom.push('1');   
+
+         var esNumero = true;
+
+
+           
+
+            nom.forEach(function(nom){
+
+                if (nom == 'a' || nom == 'e' || nom == 'i' || nom == 'o' || nom == 'u')
+                {
+                    document.write(nom + "             ");
+                    document.write("VOCAL<br />");
+                }
+                else if (esNumero != !/^([0-9])*$/.test(nom))
+                {
+                    document.write("Els noms de persones no contenen números!");
+                }
+                else
+                {
+                    document.write(nom + "             ");
+                    document.write("CONSONANT<br />");
+                }
+
+
+
+
+            });
+            
+          
+    
+    </script>
+</body>
+</html>

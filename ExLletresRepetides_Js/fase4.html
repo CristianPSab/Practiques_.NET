@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fase 4</title>
+</head>
+
+<body>
+    <script>
+        document.writeln("Fase 4<br /><br />");
+
+        var nom = [];
+
+
+        nom.push('C');
+        nom.push('r');
+        nom.push('i');
+        nom.push('s');
+        nom.push('t');
+        nom.push('i');
+        nom.push('a');
+        nom.push('n');
+        nom.push(' ');
+
+        var cognom = [];
+
+
+        cognom.push('P');
+        cognom.push('u');
+        cognom.push('n');
+        cognom.push('t');
+        cognom.push('í');
+
+
+        var lletra = '';
+
+        var nomC = nom.concat(cognom);
+
+        var fullName = [];
+
+
+        for (var i = 0; i < nomC.length; i++) {
+
+            fullName.push(nomC[i]);
+            if (i != nomC.length - 1) {
+                fullName.push(", ");
+            }
+
+
+        }
+
+
+        document.write("FullName: [");
+        fullName.forEach(function (fullName) {
+            if (fullName != ',') {
+                document.write("'");
+            }
+            document.write(fullName);
+
+
+        });
+
+
+        document.write("']");
+
+
+    </script>
+</body>
+
+</html>

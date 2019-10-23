@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fase 3</title>
+</head>
+
+<body>
+    <script>
+        //FASE 3
+        document.writeln("FASE 3<br /><br />");
+
+        var nom = [];
+
+
+        nom.push('c');
+        nom.push('r');
+        nom.push('i');
+        nom.push('s');
+        nom.push('t');
+        nom.push('i');
+        nom.push('a');
+        nom.push('n');
+
+
+        var contador = 1;
+        var diccionari = new Map();
+
+
+        for (var i = 0; i < nom.length; i++) {
+            var extension = nom[i];
+
+
+            if (diccionari.has(extension)) {
+
+                diccionari.set(extension, diccionari.get(extension) + 1);
+            }
+            else
+                diccionari.set(extension, 1);
+
+
+        }
+
+        diccionari.forEach(function (value, key, diccionari) {
+            document.writeln(key + " : " + value + "             valores repetidos<br />");
+
+        });
+
+
+
+    </script>
+</body>
+
+</html>

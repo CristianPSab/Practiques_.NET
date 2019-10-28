@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fase 2</title>
+</head>
+
+<body>
+    <script>
+        document.writeln("Fase 2<br /><br />");
+
+        document.writeln("Introdueix-hi els següents noms:<br /><br />");
+
+        var introNom = "Introdueix-hi el nom :";
+
+
+        while (true) {
+
+            var a = prompt(introNom);
+            var b = prompt(introNom);
+            var c = prompt(introNom);
+            var d = prompt(introNom);
+            var e = prompt(introNom);
+            var f = prompt(introNom);
+
+
+
+            //Declarem i omplim l'array
+            var arrayCiutats = [a, b, c, d, e, f];
+
+            //Calculem el tamany de l'array
+            var length = arrayCiutats.length;
+
+            //Ordenar Array de manera ascendent
+            arrayCiutats.sort();
+
+            document.write("\nLes 6 ciutats introduïdes són: ");
+
+            for (var i = 0; i < length; i++) {
+                if (arrayCiutats.length - 2 == i) {
+                    document.write(arrayCiutats[i] + " i ");
+
+                }
+                else if (arrayCiutats.length - 1 == i) {
+                    document.write(arrayCiutats[i] + ". ");
+
+                }
+                else {
+                    document.write(arrayCiutats[i] + " , ");
+
+                }
+            }
+            prompt();
+            break;
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fase 4</title>
+</head>
+
+<body>
+    <script>
+        document.writeln("Fase 4<br /><br />");
+
+        document.writeln("Introdueix-hi els següents noms:<br /><br />");
+
+
+
+        var introNom = "";
+        introNom = "Introdueix-hi el nom :";
+
+        while (true) {
+
+            var a = prompt(introNom);
+            var b = prompt(introNom);
+            var c = prompt(introNom);
+            var d = prompt(introNom);
+            var e = prompt(introNom);
+            var f = prompt(introNom);
+
+
+            var ciutatA = [];
+            var ciutatB = [];
+            var ciutatC = [];
+            var ciutatD = [];
+            var ciutatE = [];
+            var ciutatF = [];
+
+
+            var length1 = a.length;
+            var length2 = b.length;
+            var length3 = c.length;
+            var length4 = d.length;
+            var length5 = e.length;
+            var length6 = f.length;
+
+
+
+            for (var r = 0; r < length1; r++) {
+                ciutatA[r] = a[r];
+            }
+
+            for (var r = 0; r < length2; r++) {
+                ciutatB[r] = b[r];
+            }
+
+            for (var r = 0; r < length3; r++) {
+                ciutatC[r] = c[r];
+            }
+
+            for (var r = 0; r < length4; r++) {
+                ciutatD[r] = d[r];
+            }
+
+            for (var r = 0; r < length5; r++) {
+                ciutatE[r] = e[r];
+            }
+            for (var r = 0; r < length6; r++) {
+                ciutatF[r] = f[r];
+            }
+
+
+            document.write("<br />Les 6 ciutats introduïdes són: ");
+
+
+            for (var i = length1 - 1; i >= 0; i--) {
+                document.write(ciutatA[i]);
+
+            }
+
+
+            document.write(" , ");
+
+
+            for (var i = length2 - 1; i >= 0; i--) {
+                document.write(ciutatB[i]);
+
+            }
+
+
+            document.write(" , ");
+
+            for (var i = length3 - 1; i >= 0; i--) {
+                document.write(ciutatC[i]);
+
+            }
+
+            document.write(" , ");
+
+
+
+            for (var i = length4 - 1; i >= 0; i--) {
+                document.write(ciutatD[i]);
+
+            }
+
+            document.write(" , ");
+
+
+
+            for (var i = length5 - 1; i >= 0; i--) {
+                document.write(ciutatE[i]);
+
+            }
+
+            document.write(" i ");
+
+
+            for (var i = length6 - 1; i >= 0; i--) {
+                document.write(ciutatF[i]);
+
+            }
+
+            document.write(". ");
+
+            break;
+        }
+
+    </script>
+</body>
+
+</html>

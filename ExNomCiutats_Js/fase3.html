@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fase 3</title>
+</head>
+<body>
+    <script>
+            document.writeln("Fase 3<br /><br />");
+            document.writeln("Introdueix-hi els següents noms:");
+
+            var a = "";
+            var b = "";
+            var c = "";
+            var d = "";
+            var e = "";
+            var f = "";
+
+            var introNom = "";
+          
+            introNom  = "Introdueix-hi el nom :";
+          
+            while (true)
+            {
+
+                a = prompt(introNom);
+                b = prompt(introNom);
+                c = prompt(introNom);
+                d = prompt(introNom);
+                e = prompt(introNom);
+                f = prompt(introNom);
+
+                var  arrayCiutats = [ a, b, c, d, e, f ];
+                var arrayCiutatsModificades = [ a, b, c, d, e, f ];
+
+                var l = arrayCiutats.length;
+
+                for (var r = 0; r < l; r++)
+                {
+                   
+                    arrayCiutatsModificades[r] = arrayCiutats[r].replace(/[aàáAÀÁ]/gi, "4");
+                }
+                arrayCiutatsModificades.sort();
+                document.writeln("<br />Les 6 ciutats introduïdes són:<br /><br /> ");
+
+                for (var i = 0; i < l; i++)
+                {
+                    if (arrayCiutatsModificades.length - 2 == i)
+                    {
+                        document.writeln(arrayCiutatsModificades[i] + " i ");
+
+                    }
+                    else if (arrayCiutatsModificades.length - 1 == i)
+                    {
+                        document.writeln(arrayCiutatsModificades[i] + ". ");
+
+                    }
+                    else
+                    {
+                        document.writeln(arrayCiutatsModificades[i] + " , ");
+
+                    }
+                }
+
+                break;
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+/Volumes/TOSHIBA/ITAcademy .NET/Curso.Net/Visual Studio/Exercicis .NET/ExNomCiutats_C#/Fase1/Fase1/obj/Debug/Fase1.csprojAssemblyReference.cache
+/Volumes/TOSHIBA/ITAcademy .NET/Curso.Net/Visual Studio/Exercicis .NET/ExNomCiutats_C#/Fase1/Fase1/obj/Debug/Fase1.exe
+/Volumes/TOSHIBA/ITAcademy .NET/Curso.Net/Visual Studio/Exercicis .NET/ExNomCiutats_C#/Fase1/Fase1/obj/Debug/Fase1.pdb
+/Users/usuarideprova/Projects/ExNomCiutats_C#/Fase1/Fase1/bin/Debug/Fase1.exe
+/Users/usuarideprova/Projects/ExNomCiutats_C#/Fase1/Fase1/bin/Debug/Fase1.pdb
+/Users/usuarideprova/Projects/ExNomCiutats_C#/Fase1/Fase1/obj/Debug/Fase1.csprojAssemblyReference.cache
+/Users/usuarideprova/Projects/ExNomCiutats_C#/Fase1/Fase1/obj/Debug/Fase1.exe
+/Users/usuarideprova/Projects/ExNomCiutats_C#/Fase1/Fase1/obj/Debug/Fase1.pdb
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExNomCiutats_C#\Fase1\Fase1\bin\Debug\Fase1.exe
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExNomCiutats_C#\Fase1\Fase1\bin\Debug\Fase1.pdb
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExNomCiutats_C#\Fase1\Fase1\obj\Debug\Fase1.csprojAssemblyReference.cache
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExNomCiutats_C#\Fase1\Fase1\obj\Debug\Fase1.exe
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExNomCiutats_C#\Fase1\Fase1\obj\Debug\Fase1.pdb

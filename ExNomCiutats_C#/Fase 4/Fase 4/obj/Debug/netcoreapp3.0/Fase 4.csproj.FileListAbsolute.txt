@@ -1,0 +1,11 @@
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExNomCiutats_C#\Fase 4\Fase 4\bin\Debug\netcoreapp3.0\Fase 4.exe
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExNomCiutats_C#\Fase 4\Fase 4\bin\Debug\netcoreapp3.0\Fase 4.deps.json
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExNomCiutats_C#\Fase 4\Fase 4\bin\Debug\netcoreapp3.0\Fase 4.runtimeconfig.json
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExNomCiutats_C#\Fase 4\Fase 4\bin\Debug\netcoreapp3.0\Fase 4.runtimeconfig.dev.json
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExNomCiutats_C#\Fase 4\Fase 4\bin\Debug\netcoreapp3.0\Fase 4.dll
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExNomCiutats_C#\Fase 4\Fase 4\bin\Debug\netcoreapp3.0\Fase 4.pdb
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExNomCiutats_C#\Fase 4\Fase 4\obj\Debug\netcoreapp3.0\Fase 4.csprojAssemblyReference.cache
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExNomCiutats_C#\Fase 4\Fase 4\obj\Debug\netcoreapp3.0\Fase 4.AssemblyInfoInputs.cache
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExNomCiutats_C#\Fase 4\Fase 4\obj\Debug\netcoreapp3.0\Fase 4.AssemblyInfo.cs
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExNomCiutats_C#\Fase 4\Fase 4\obj\Debug\netcoreapp3.0\Fase 4.dll
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .NET\ExNomCiutats_C#\Fase 4\Fase 4\obj\Debug\netcoreapp3.0\Fase 4.pdb

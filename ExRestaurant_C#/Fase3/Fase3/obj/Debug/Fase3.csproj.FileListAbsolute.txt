@@ -1,0 +1,10 @@
+/Users/usuarideprova/Projects/ExRestaurant_C#/Fase3/Fase3/bin/Debug/Fase3.exe
+/Users/usuarideprova/Projects/ExRestaurant_C#/Fase3/Fase3/bin/Debug/Fase3.pdb
+/Users/usuarideprova/Projects/ExRestaurant_C#/Fase3/Fase3/obj/Debug/Fase3.csprojAssemblyReference.cache
+/Users/usuarideprova/Projects/ExRestaurant_C#/Fase3/Fase3/obj/Debug/Fase3.exe
+/Users/usuarideprova/Projects/ExRestaurant_C#/Fase3/Fase3/obj/Debug/Fase3.pdb
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .Net\ExRestaurant_C#\Fase3\Fase3\bin\Debug\Fase3.exe
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .Net\ExRestaurant_C#\Fase3\Fase3\bin\Debug\Fase3.pdb
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .Net\ExRestaurant_C#\Fase3\Fase3\obj\Debug\Fase3.csprojAssemblyReference.cache
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .Net\ExRestaurant_C#\Fase3\Fase3\obj\Debug\Fase3.exe
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .Net\ExRestaurant_C#\Fase3\Fase3\obj\Debug\Fase3.pdb

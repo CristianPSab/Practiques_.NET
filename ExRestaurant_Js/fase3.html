@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fase 3</title>
+</head>
+
+<body>
+    <script>
+        document.writeln("Fase 3<br /><br />");
+
+        var bCinc = 5;
+        var bDeu = 10;
+        var bVint = 20;
+        var bCinquanta = 50;
+        var bCent = 100;
+        var bDosCents = 200;
+        var bCincCents = 500;
+        var preuTotal = 0;
+
+        var menu = new Array(5);
+        var preu = new Array(5);
+
+        var length1 = menu.length;
+        var length2 = preu.length;
+
+        document.writeln("Afegim els 5 plats del menú:<br /><br /> ");
+
+        var int = "Introduïm plats i preus";
+        for (var mi = 0; mi < length1; mi++) {
+            var m = prompt(int, "Plat " + (mi + 1));
+            menu[mi] = m;
+
+            document.writeln(m + "<br /><br />");
+
+        }
+
+        document.writeln("<br /><br />Afegim els 5 preus de cada plat:<br /><br /> ");
+
+        for (var pi = 0; pi < length2; pi++) {
+
+            var p = prompt(int, "Preu" + (pi + 1));
+
+            if (!isNaN(p)) {
+
+                preu[pi] = parseInt(p);
+                document.writeln("<br /> " + p + "<br /><br />");
+
+            }
+            else {
+                document.writeln("El preu ha de ser numèric<br /><br />");
+                pi--;
+            }
+        }
+
+        var length = length1 + length2;
+        var i = 0;
+
+        for (; i < length - 5; i++) {
+            document.writeln("<br /> " + menu[i] + ":    " + preu[i] + "    euros.");
+        }
+
+        var menjar = [];
+
+        while (true) {
+            var d;
+            var m;
+            m = prompt("Que vol per menjar?");
+            menjar.push(m);
+
+            document.writeln("<br /><br />Ha demanat " + m + "<br />");
+
+            var j = 0;
+            d = "";
+            while (d != "1" && d != "0") {
+
+                d = prompt("Vol seguir demanant menjar? (1:Si / 0:No)");
+
+            }
+
+            j = parseInt(d);
+
+            if (j == 0) {
+                break;
+            }
+        }
+
+        for (var r = 0; r < menjar.length; r++) {
+            var compare = 0.0;
+            for (var p = 0; p < length1; p++) {
+                compare = menjar[r].localeCompare(menu[p]);
+                if (compare == 0) {
+                    preuTotal += preu[p];
+                    document.writeln("<br />Aquest és el plat " + menjar[r] + " i val " + preu[p]);
+
+                    break;
+
+                }
+                else if (p == length1 - 1) {
+                    document.writeln("<br /><br />El producte " + menjar[r] + " que ha demanat no existeix.<br /><br />");
+
+                }
+            }
+        }
+
+        document.writeln("<br /><br />El preu total és: " + preuTotal + "<br /><br />");
+
+        var ce = 0;
+        var ci = 0;
+        var v = 0;
+        var de = 0;
+        var cinc = 0;
+        var cc = 0;
+        var dc = 0;
+
+        if (preuTotal >= bCincCents) {
+            cc = parseInt(preuTotal / bCincCents);
+            preuTotal -= cc * bCincCents;
+        }
+
+        if (preuTotal >= bDosCents) {
+            dc = parseInt(preuTotal / bDosCents);
+            preuTotal -= dc * bDosCents;
+        }
+
+        if (preuTotal >= bCent) {
+            ce = parseInt(preuTotal / bCent);
+            preuTotal -= (ce * bCent);
+        }
+
+        if (preuTotal >= bCinquanta) {
+            ci = parseInt(preuTotal / bCinquanta);
+            preuTotal -= ci * bCinquanta;
+        }
+
+        if (preuTotal >= bVint) {
+            v = parseInt(preuTotal / bVint);
+            preuTotal -= v * bVint;
+        }
+
+        if (preuTotal >= bDeu) {
+            de = parseInt(preuTotal / bDeu);
+            preuTotal -= de * bDeu;
+        }
+
+        if (preuTotal >= bCinc) {
+            cinc = parseInt(preuTotal / bCinc);
+            preuTotal -= cinc * bCinc;
+        }
+
+        document.writeln("<br /><br />Bitllets de 500: " + cc);
+        document.writeln("<br /><br />Bitllets de 200: " + dc);
+        document.writeln("<br /><br />Bitllets de 100: " + ce);
+        document.writeln("<br /><br />Bitllets de 50: " + ci);
+        document.writeln("<br /><br />Bitllets de 20: " + v);
+        document.writeln("<br /><br />Bitllets de 10: " + de);
+        document.writeln("<br /><br />Bitllets de 5: " + cinc);
+
+    </script>
+</body>
+
+</html>

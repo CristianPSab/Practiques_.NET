@@ -1,0 +1,22 @@
+/Users/usuarideprova/Projects/ExRestaurant_C#/Fase 1/Fase 1/bin/Debug/netcoreapp3.0/Fase 1
+/Users/usuarideprova/Projects/ExRestaurant_C#/Fase 1/Fase 1/bin/Debug/netcoreapp3.0/Fase 1.deps.json
+/Users/usuarideprova/Projects/ExRestaurant_C#/Fase 1/Fase 1/bin/Debug/netcoreapp3.0/Fase 1.runtimeconfig.json
+/Users/usuarideprova/Projects/ExRestaurant_C#/Fase 1/Fase 1/bin/Debug/netcoreapp3.0/Fase 1.runtimeconfig.dev.json
+/Users/usuarideprova/Projects/ExRestaurant_C#/Fase 1/Fase 1/bin/Debug/netcoreapp3.0/Fase 1.dll
+/Users/usuarideprova/Projects/ExRestaurant_C#/Fase 1/Fase 1/bin/Debug/netcoreapp3.0/Fase 1.pdb
+/Users/usuarideprova/Projects/ExRestaurant_C#/Fase 1/Fase 1/obj/Debug/netcoreapp3.0/Fase 1.csprojAssemblyReference.cache
+/Users/usuarideprova/Projects/ExRestaurant_C#/Fase 1/Fase 1/obj/Debug/netcoreapp3.0/Fase 1.AssemblyInfoInputs.cache
+/Users/usuarideprova/Projects/ExRestaurant_C#/Fase 1/Fase 1/obj/Debug/netcoreapp3.0/Fase 1.AssemblyInfo.cs
+/Users/usuarideprova/Projects/ExRestaurant_C#/Fase 1/Fase 1/obj/Debug/netcoreapp3.0/Fase 1.dll
+/Users/usuarideprova/Projects/ExRestaurant_C#/Fase 1/Fase 1/obj/Debug/netcoreapp3.0/Fase 1.pdb
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .Net\ExRestaurant_C#\Fase 1\Fase 1\obj\Debug\netcoreapp3.0\Fase 1.AssemblyInfoInputs.cache
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .Net\ExRestaurant_C#\Fase 1\Fase 1\obj\Debug\netcoreapp3.0\Fase 1.AssemblyInfo.cs
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .Net\ExRestaurant_C#\Fase 1\Fase 1\bin\Debug\netcoreapp3.0\Fase 1.exe
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .Net\ExRestaurant_C#\Fase 1\Fase 1\bin\Debug\netcoreapp3.0\Fase 1.deps.json
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .Net\ExRestaurant_C#\Fase 1\Fase 1\bin\Debug\netcoreapp3.0\Fase 1.runtimeconfig.json
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .Net\ExRestaurant_C#\Fase 1\Fase 1\bin\Debug\netcoreapp3.0\Fase 1.runtimeconfig.dev.json
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .Net\ExRestaurant_C#\Fase 1\Fase 1\bin\Debug\netcoreapp3.0\Fase 1.dll
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .Net\ExRestaurant_C#\Fase 1\Fase 1\bin\Debug\netcoreapp3.0\Fase 1.pdb
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .Net\ExRestaurant_C#\Fase 1\Fase 1\obj\Debug\netcoreapp3.0\Fase 1.dll
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .Net\ExRestaurant_C#\Fase 1\Fase 1\obj\Debug\netcoreapp3.0\Fase 1.pdb
+D:\ITAcademy .NET\Curso.Net\Visual Studio\Exercicis .Net\ExRestaurant_C#\Fase 1\Fase 1\obj\Debug\netcoreapp3.0\Fase 1.csprojAssemblyReference.cache

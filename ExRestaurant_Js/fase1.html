@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fase 1</title>
+</head>
+<body>
+    <script>
+            document.writeln("Fase 1<br /><br />");
+
+            var bCinc = 5;
+            var bDeu = 10;
+            var bVint = 20;
+            var bCinquanta = 50;
+            var bCent = 100;
+            var bDosCents = 200;
+            var bCincCents = 500;
+            var preuTotal = 0;
+
+            var menu = new Array (5);
+            var preu = new Array (5);
+
+            var length1 = menu.length;
+            var length2 = preu.length;
+
+            document.writeln("Afegim els 5 plats del menú:<br /><br /> ");
+            
+            var int = "Introduïm plats i preus";
+
+            for (var mi = 0; mi < length1; mi++)
+            {
+                var m = prompt(int ,"Plat " + (mi + 1) );
+                menu[mi] = m;
+
+                document.writeln(m + "<br /><br />");
+              
+            }
+
+            document.writeln("<br /><br />Afegim els 5 preus de cada plat:<br /><br /> ");
+
+            for (var pi = 0; pi < length2; pi++)
+            {
+
+                var p = prompt(int, "Preu"  + (pi + 1));
+
+                if(!isNaN(p))
+                {
+
+                    preu[pi] = parseInt(p);
+                    document.writeln("<br /> " + p + "<br /><br />");
+
+                }
+                else
+                {
+                    document.writeln("El preu ha de ser numèric<br /><br />");
+                    pi--;
+                }
+            }
+
+    </script>
+</body>
+</html>

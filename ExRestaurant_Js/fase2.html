@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fase 2</title>
+</head>
+
+<body>
+    <script>
+        document.writeln("Fase 2<br /><br />");
+
+        var menu = new Array(5);
+        var preu = new Array(5);
+
+        var length1 = menu.length;
+        var length2 = preu.length;
+
+        document.writeln("Afegim els 5 plats del menú:<br /><br /> ");
+
+        var int = "Introduïm plats i preus";
+        for (var mi = 0; mi < length1; mi++) {
+            var m = prompt(int, "Plat " + (mi + 1));
+            menu[mi] = m;
+
+            document.writeln(m + "<br /><br />");
+
+        }
+        document.writeln("<br /><br />Afegim els 5 preus de cada plat:<br /><br /> ");
+
+        for (var pi = 0; pi < length2; pi++) {
+
+            var p = prompt(int, "Preu" + (pi + 1));
+
+            if (!isNaN(p)) {
+
+                preu[pi] = parseInt(p);
+                document.writeln("<br /> " + p + "<br /><br />");
+
+            }
+            else {
+                document.writeln("El preu ha de ser numèric<br /><br />");
+                pi--;
+            }
+        }
+
+        var length = length1 + length2;
+        var i = 0;
+
+        for (; i < length - 5; i++) {
+            document.writeln("<br /> " + menu[i] + ":    " + preu[i] + "    euros.");
+        }
+
+        var menjar = [];
+
+        while (true) {
+            var d;
+            var m;
+            m = prompt("Que vol per menjar?");
+            menjar.push(m);
+
+            document.writeln("<br /><br />Ha demanat " + m + "<br />");
+
+
+            var j = 0;
+            d = "";
+
+            while (d != "1" && d != "0") {
+
+                d = prompt("Vol seguir demanant menjar? (1:Si / 0:No)");
+
+            }
+
+            j = parseInt(d);
+
+            if (j == 0) {
+                break;
+            }
+        }
+    </script>
+</body>
+
+</html>

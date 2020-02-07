@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <StartWorkingDirectory>$(MSBuildProjectDirectory)</StartWorkingDirectory>
+
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon />
+    <Win32Resource />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\netcoreapp3.0\appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\netcoreapp3.0\CrazyBooks.db" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Academy.Lib.DAL\Academy.Lib.DAL.csproj" />
+    <ProjectReference Include="..\Academy.Lib\Academy.Lib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Release\netcoreapp3.0\runtimes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Common.Lib">
+      <HintPath>..\0 Core\Core.Lib\bin\Debug\netstandard2.0\Common.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Lib.DAL.EFCore">
+      <HintPath>..\0 Core\Common.Lib.DAL.EFCore\bin\Debug\netstandard2.0\Common.Lib.DAL.EFCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+</Project>

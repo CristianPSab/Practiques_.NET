@@ -1,0 +1,35 @@
+﻿<Window x:Class="AcademyIT_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AcademyIT_WPF"
+        xmlns:controls="clr-namespace:Academy.App.WPF.Views"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Students">
+                <controls:StudentsView ></controls:StudentsView>
+            </TabItem>
+            <TabItem Header="Subjects">
+                <controls:SubjectsView></controls:SubjectsView>
+            </TabItem>
+            <TabItem Header="Exams">
+                <controls:ExamsView></controls:ExamsView>
+            </TabItem>
+            <TabItem Header="Estadisticas">
+                <controls:EstadisticasView></controls:EstadisticasView>
+            </TabItem>
+           
+        </TabControl>
+        <Grid HorizontalAlignment="Left" Height="0" Margin="66,0,0,0" VerticalAlignment="Center" Width="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <!--<controls:LoginView></controls:LoginView>--><!--<controls:LoginView></controls:LoginView>-->
+
+    </Grid>
+</Window>

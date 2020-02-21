@@ -184,7 +184,7 @@ namespace Academy.App.WPF.ViewsModels
         {
             if (CurrentSubject != null)
             {
-                var repo = Entity.DepCon.Resolve<ISubjectsRepository>();
+                var repo = Entity.DepCon.Resolve<IRepository<Subject>>();
 
                 var s = repo.Find(CurrentSubject.Id);
 

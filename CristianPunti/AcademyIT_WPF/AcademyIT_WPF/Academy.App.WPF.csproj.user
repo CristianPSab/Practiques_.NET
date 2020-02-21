@@ -2,6 +2,10 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ShowAllFiles>true</ShowAllFiles>
+    <ActiveDebugProfile>Academy.App.WPF</ActiveDebugProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
     <ApplicationDefinition Update="App.xaml">
@@ -13,6 +17,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\ExamsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\StudentExamsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\StudentSubjectsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -29,10 +39,16 @@
     <Page Update="Views\LoginView.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\StudentExamsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\StudentsView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\SubjectsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\StudentSubjectsView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

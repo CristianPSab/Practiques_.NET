@@ -49,8 +49,6 @@ namespace Academy.App.WPF.Migrations
                     b.Property<string>("Title")
                         .HasColumnType("TEXT");
 
-                    b.HasIndex("SubjectId");
-
                     b.HasDiscriminator().HasValue("Exam");
                 });
 
@@ -70,6 +68,44 @@ namespace Academy.App.WPF.Migrations
                     b.HasDiscriminator().HasValue("Student");
                 });
 
+            modelBuilder.Entity("Academy.Lib.Models.StudentExam", b =>
+                {
+                    b.HasBaseType("Common.Lib.Core.Entity");
+
+                    b.Property<Guid>("ExamId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("HasCheated")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<double>("Mark")
+                        .HasColumnType("REAL");
+
+                    b.Property<Guid>("StudentId")
+                        .HasColumnType("TEXT");
+
+                    b.HasIndex("ExamId");
+
+                    b.HasIndex("StudentId");
+
+                    b.HasDiscriminator().HasValue("StudentExam");
+                });
+
+            modelBuilder.Entity("Academy.Lib.Models.StudentSubject", b =>
+                {
+                    b.HasBaseType("Common.Lib.Core.Entity");
+
+                    b.Property<Guid>("StudentId")
+                        .HasColumnName("StudentSubject_StudentId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("SubjectId")
+                        .HasColumnName("StudentSubject_SubjectId")
+                        .HasColumnType("TEXT");
+
+                    b.HasDiscriminator().HasValue("StudentSubject");
+                });
+
             modelBuilder.Entity("Academy.Lib.Models.Subject", b =>
                 {
                     b.HasBaseType("Common.Lib.Core.Entity");
@@ -84,11 +120,17 @@ namespace Academy.App.WPF.Migrations
                     b.HasDiscriminator().HasValue("Subject");
                 });
 
-            modelBuilder.Entity("Academy.Lib.Models.Exam", b =>
+            modelBuilder.Entity("Academy.Lib.Models.StudentExam", b =>
                 {
-                    b.HasOne("Academy.Lib.Models.Subject", "Subject")
+                    b.HasOne("Academy.Lib.Models.Exam", "Exam")
                         .WithMany()
-                        .HasForeignKey("SubjectId")
+                        .HasForeignKey("ExamId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Academy.Lib.Models.Student", "Student")
+                        .WithMany()
+                        .HasForeignKey("StudentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

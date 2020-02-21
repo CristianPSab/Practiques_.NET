@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\crpun\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\crpun\\.nuget\\packages"
+      "C:\\Users\\formacio\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\formacio\\.nuget\\packages"
     ]
   }
 }

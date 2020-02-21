@@ -59,7 +59,7 @@ namespace Academy.Lib.Models
 
             #region check duplication
 
-            var repo = Entity.DepCon.Resolve<IExamsRepository>();
+            var repo = Entity.DepCon.Resolve<IRepository<Exam>>();
             var entityWithDni = repo.QueryAll().FirstOrDefault(s => s.Title == title);
 
             if (currentId == default && entityWithDni != null)

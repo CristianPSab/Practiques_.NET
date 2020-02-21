@@ -11,11 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="bin\Debug\netcoreapp3.0\appsettings.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="bin\Debug\netcoreapp3.0\CrazyBooks.db" />
+    <None Include="bin\Debug\netcoreapp3.0\appsettings.json" />
   </ItemGroup>
 
   <ItemGroup>

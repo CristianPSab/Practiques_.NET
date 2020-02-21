@@ -42,6 +42,11 @@ namespace Academy.App.WPF
                 return new EfCoreRepository<Exam>(GetDbConstructor());
             });
 
+            var studentsSubjectsRepoBuilder = new Func<object[], object>((parameters) =>
+            {
+                return new EfCoreRepository<StudentSubject>(GetDbConstructor());
+            });
+
             var studentsExamsRepoBuilder = new Func<object[], object>((parameters) =>
             {
                 return new EfCoreRepository<StudentExam>(GetDbConstructor());
@@ -52,13 +57,15 @@ namespace Academy.App.WPF
 
 
             depCon.Register<IRepository<Subject>, EfCoreRepository<Subject>>(subjectsRepoBuilder);
-            depCon.Register<ISubjectsRepository, SubjectsRepository>((parameters) => new SubjectsRepository(GetDbConstructor()));
 
             depCon.Register<IRepository<Exam>, EfCoreRepository<Exam>>(examsRepoBuilder);
-            depCon.Register<IExamsRepository, ExamsRepository>((parameters) => new ExamsRepository(GetDbConstructor()));
 
+
+            depCon.Register<IRepository<StudentSubject>, EfCoreRepository<StudentSubject>>(studentsSubjectsRepoBuilder);
 
             depCon.Register<IRepository<StudentExam>, EfCoreRepository<StudentExam>>(studentsExamsRepoBuilder);
+
+
         }
 
         private static AcademyDbContext GetDbConstructor()

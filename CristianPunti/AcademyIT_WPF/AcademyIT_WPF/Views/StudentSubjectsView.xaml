@@ -1,0 +1,103 @@
+﻿<UserControl x:Class="Academy.App.WPF.Views.StudentSubjectsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Academy.App.WPF.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="#FFE5E5E5">
+
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="auto"/>
+
+            <RowDefinition Height="auto"/>
+
+            <RowDefinition Height="auto"/>
+
+            <RowDefinition Height="auto"/>
+
+            <RowDefinition Height="auto"/>
+
+            <RowDefinition Height="auto"/>
+
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="*"/>
+
+            <ColumnDefinition Width="*"/>
+
+            <ColumnDefinition Width="Auto"/>
+
+        </Grid.ColumnDefinitions>
+
+
+
+        <Label Content="MENÚ GESTIÓN" Grid.Row="0" Grid.Column="0"   HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" FontWeight="Bold" />
+
+        <Label Content="DNI Alumno" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" Margin="15,0,0,0" VerticalAlignment="Top"/>
+
+        <TextBox Text="{Binding DniS }"  Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" Margin="140,0,0,0"  VerticalAlignment="Top" Width="190" Height="25"/>
+
+        <Button  Command="{Binding FindStudentCommand}"    Content="Buscar Alumno" Grid.Row="1" HorizontalAlignment="Left" Margin="346,0,0,0" VerticalAlignment="Center" Height="25" FontWeight="Bold" Grid.ColumnSpan="2"/>
+
+        <Label Content="Nombre Alumno" Grid.Row="3" HorizontalAlignment="Left" Margin="15,7,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.013,0.561" Grid.RowSpan="2"/>
+
+        <TextBox Text="{Binding NameS}" Grid.Row="3" HorizontalAlignment="Left" Margin="140,5,0,0" VerticalAlignment="Top" Width="190" Height="25" Grid.RowSpan="3" RenderTransformOrigin="0.5,1.162" IsEnabled="False"/>
+
+        <Label Content="Añadir Asignaturas" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Left" Margin="20,0,0,0" VerticalAlignment="Top" FontWeight="Normal"/>
+
+        <Label Content="Asignaturas" Grid.Row="5" Grid.Column="0" HorizontalAlignment="Left" Margin="18,5,0,0" VerticalAlignment="Top"/>
+
+
+
+        <Grid Background="#FFE5E5E5" Grid.Row="6" Grid.Column="0" Margin="0,0,30,5" Grid.RowSpan="3" >
+
+            <DataGrid x:Name="SubjectsMGVMDataGrid" ItemsSource="{Binding SubjectList}" SelectedItem="{Binding CurrentSubject}" Margin="20,20,-15,45" />
+
+            <Button  Content="Ver Asignaturas" Grid.Column="0" Command="{Binding GetSubjectsMGVMCommand }"  HorizontalAlignment="Left" Margin="20,0,0,10" VerticalAlignment="Bottom" FontSize="10" RenderTransformOrigin="0.895,0.422" />
+
+            <Button Content="AñadirAsignatura" Grid.Column="0" Command="{Binding AddSubjectToListVMCommand}" HorizontalAlignment="Left" Margin="230,0,0,10" VerticalAlignment="Bottom" FontSize="10" Width="120" RenderTransformOrigin="0.542,-0.561"/>
+
+        </Grid>
+
+
+
+        <Grid Background="#FFE5E5E5" Grid.Row="5" Grid.Column="1"  Margin="0,28,85,5" Grid.RowSpan="3">
+
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition Width="40*"/>
+
+                <ColumnDefinition Width="23*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <DataGrid x:Name="SubjectsToStudentMGVMDataGrid" ItemsSource="{Binding SubjectsByStudentList}" SelectedItem="{Binding CurrentStudentSubject}"  Margin="20,26,-65,45" AutoGenerateColumns="False" Grid.ColumnSpan="2" >
+
+                <DataGrid.Columns>
+
+                    <DataGridTextColumn Header="Asignaturas"  Binding="{Binding Subject.Name}"></DataGridTextColumn>
+
+                </DataGrid.Columns>
+
+            </DataGrid>
+
+            <Button Content="Borrar Asignatura" Command="{Binding DelSubjectToListVMCommand}" HorizontalAlignment="Left" Margin="135,0,0,10" VerticalAlignment="Bottom" RenderTransformOrigin="0.379,-0.251" FontSize="10" Width="130" Grid.ColumnSpan="2"/>
+
+        </Grid>
+
+
+
+    </Grid>
+
+</UserControl>         
+
+
+

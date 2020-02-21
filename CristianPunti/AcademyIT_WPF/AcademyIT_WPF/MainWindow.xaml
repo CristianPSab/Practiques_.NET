@@ -18,10 +18,17 @@
             <TabItem Header="Exams">
                 <controls:ExamsView></controls:ExamsView>
             </TabItem>
+            <TabItem Header="StudentSubjects">
+                <controls:StudentSubjectsView></controls:StudentSubjectsView>
+            </TabItem>
+            <TabItem Header="StudentExams">
+                <controls:StudentExamsView></controls:StudentExamsView>
+            </TabItem>
             <TabItem Header="Estadisticas">
                 <controls:EstadisticasView></controls:EstadisticasView>
             </TabItem>
            
+
         </TabControl>
         <Grid HorizontalAlignment="Left" Height="0" Margin="66,0,0,0" VerticalAlignment="Center" Width="0">
             <Grid.ColumnDefinitions>
@@ -29,7 +36,7 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
         </Grid>
-        <!--<controls:LoginView></controls:LoginView>--><!--<controls:LoginView></controls:LoginView>-->
+        <!--<controls:LoginView></controls:LoginView><controls:LoginView></controls:LoginView>-->
 
     </Grid>
 </Window>

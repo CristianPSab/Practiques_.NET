@@ -231,7 +231,7 @@ namespace Academy.App.WPF.ViewsModels
         {
             if (CurrentExamEV != null)
             {
-                var repo = Entity.DepCon.Resolve<IExamsRepository>();
+                var repo = Entity.DepCon.Resolve<IRepository<Exam>>();
 
                 var s = repo.Find(CurrentExamEV.Id);
 

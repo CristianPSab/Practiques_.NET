@@ -11,6 +11,9 @@ namespace Academy.Lib.Models
 {
     public class Subject : Entity
     {
+        public string Name { get; set; }
+        public string Teacher { get; set; }
+
         #region Static Validations
         public static ValidationResult<string> ValidateName(string name, Guid currentId = default)
         {
@@ -27,7 +30,7 @@ namespace Academy.Lib.Models
 
             #region check duplication
 
-            var repo = Entity.DepCon.Resolve<ISubjectsRepository>();
+            var repo = Entity.DepCon.Resolve<IRepository<Subject>>();
             var entityWithDni = repo.QueryAll().FirstOrDefault(s => s.Name == name);
 
             if (currentId == default && entityWithDni != null)
@@ -73,6 +76,8 @@ namespace Academy.Lib.Models
             return output;
         }
         #endregion
+
+  
 
         #region Domain Validations
 
@@ -133,8 +138,6 @@ namespace Academy.Lib.Models
             return output as T;
         }
 
-        public string Name { get; set; }
-        public string Teacher { get; set; }
 
         public Subject()
         {

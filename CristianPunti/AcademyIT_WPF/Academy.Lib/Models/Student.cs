@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Collections;
+using Common.Lib.Core.Context;
 using Common.Lib.Core;
 using Common.Lib.Infrastructure;
 using System.Text.RegularExpressions;
@@ -14,6 +15,9 @@ namespace Academy.Lib.Models
 
     public class Student : Entity
     {
+        public string Dni { get; set; }
+        public string Name { get; set; }
+        public int ChairNumber { get; set; }
 
         #region Static Validations
 
@@ -37,7 +41,7 @@ namespace Academy.Lib.Models
 
             #region check duplication
 
-            var repo = Entity.DepCon.Resolve<IStudentsRepository>();
+            var repo = Entity.DepCon.Resolve<IRepository<Student>>();
             var entityWithDni = repo.QueryAll().FirstOrDefault(s => s.Dni == dni);
 
             if (currentId == default && entityWithDni != null)
@@ -92,7 +96,7 @@ namespace Academy.Lib.Models
                 IsSuccess = true
             };
 
-            int chairNumber = 0;
+            var chairNumber = 0;
             var isConversionOk = false;
 
             #region check null or empty
@@ -119,7 +123,7 @@ namespace Academy.Lib.Models
 
             if (isConversionOk)
             {
-                var repoStudents = Entity.DepCon.Resolve<IStudentsRepository>();
+                var repoStudents = Entity.DepCon.Resolve<IRepository<Student>>();
 
                 var currentStudentInChair = repoStudents.QueryAll().FirstOrDefault(s => s.ChairNumber == chairNumber);
 
@@ -149,9 +153,7 @@ namespace Academy.Lib.Models
         }
 
         #endregion
-        public string Dni { get; set; }
-        public string Name { get; set; }
-        public int ChairNumber { get; set; }
+ 
 
         #region Domain Validations
 

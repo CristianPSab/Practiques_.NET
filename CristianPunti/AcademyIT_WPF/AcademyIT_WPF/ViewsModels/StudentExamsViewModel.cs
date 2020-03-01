@@ -90,8 +90,8 @@ namespace Academy.App.WPF.ViewsModels
             set
             {
                 _markSEVM = value;
-               
-              
+
+
                 OnPropertyChanged();
             }
 
@@ -156,6 +156,7 @@ namespace Academy.App.WPF.ViewsModels
             set
             {
                 _currentStudentSEVM = value;
+
                 OnPropertyChanged();
             }
         }
@@ -187,7 +188,7 @@ namespace Academy.App.WPF.ViewsModels
             {
                 _currentStudentExamSEVM = value;
 
-                if(CurrentStudentExamSEVM != null)
+                if (CurrentStudentExamSEVM != null)
                 {
                     this.MarkTextS = Convert.ToString(CurrentStudentExamSEVM.Mark);
                     this.HasCheatedSEVM = CurrentStudentExamSEVM.HasCheated;
@@ -223,6 +224,24 @@ namespace Academy.App.WPF.ViewsModels
                 OnPropertyChanged();
             }
         }
+
+        StudentExam examToUpdate = new StudentExam();
+
+
+        private Guid _id = default;
+        public Guid Id
+        {
+            get
+            {
+                return _id;
+            }
+            set
+            {
+                _id = value;
+                OnPropertyChanged();
+            }
+        }
+
         public StudentExamsViewModel()
         {
             FindStudentSEVMCommand = new RouteCommand(FindStudentSEVM);
@@ -234,80 +253,93 @@ namespace Academy.App.WPF.ViewsModels
 
         }
 
-        public void SaveStudentExamsSEVM()
+        public void EditStudentExamsSEVM()
         {
-            MarkStringToDoubleS();
-
-            StudentExam stexam = new StudentExam();
-            Student student = new Student();
-            Exam exam = new Exam();
-
-            exam = CurrentExamS;
-            student = CurrentStudentSEVM;
-
-            if (MarkSEVM != 0)
+            if (CurrentStudentSEVM != null)
             {
-                if (CurrentStudentExamSEVM != null)
+                MarkStringToDoubleS();
+
+                StudentExam stexam = new StudentExam();
+                //Student student = new Student();
+                //Exam exam = new Exam();
+
+                //exam = CurrentExamS;
+                //student = CurrentStudentSEVM;
+
+                //if (MarkSEVM != 0)
+                //{
+                //    if (CurrentStudentExamSEVM != null)
+                //    {
+                //        stexam = CurrentStudentExamSEVM;
+                //    }
+
+                //    stexam.Mark = MarkSEVM;
+
+                //    stexam.HasCheated = HasCheatedSEVM;
+
+                //    if (CurrentStudentSEVM != null)
+                //    {
+
+                //        stexam.StudentId = student.Id;
+
+                //        if (CurrentExamS != null)
+                //        {
+
+                //            stexam.ExamId = exam.Id;
+
+                //        }
+                //        if (CurrentStudentSEVM != null || CurrentStudentExamSEVM != null)
+                //        {
+
+                //            GetStudentExamsSEVM();
+
+                //            MarkTextS = "";
+
+                //        }
+                //    }
+                //}
+
+                //stexam.Mark = MarkSEVM;
+                // StudentExam examToUpdate = CurrentStudentExamSEVM.Clone();
+                // StudentExam examToUpdate = new StudentExam();
+                // examToUpdate.Mark = MarkSEVM;
+                var vrstex = examToUpdate.Save();
+
+                if (vrstex.IsSuccess)
                 {
-                    stexam = CurrentStudentExamSEVM;
+                    MessageBox.Show($"La nota del examen del estudiante se ha editado correctamente");
+                    CurrentStudentExamSEVM = vrstex.Entity;
+                    StudentExamsListSEVM = stexam.StudentByExams(stexam.StudentId);
+                }
+                else
+                {
+                    MessageBox.Show($"La nota del examen del estudiante no se ha editado correctamente");
+
                 }
 
-                stexam.Mark = MarkSEVM;
+                CurrentStudentSEVM = null;
+                CurrentExamS = null;
+                DniS = "";
+                NameS = "";
+                TitleS = "";
+                SubjectNameS = "";
+                DateS = default;
+                MarkTextS = "";
+                HasCheatedSEVM = default;
+                this.Id = default;
 
-                stexam.HasCheated = HasCheatedSEVM;
+                //GetStudentExamsSEVM();
 
-                if (CurrentStudentSEVM != null)
-                {
-
-                    stexam.StudentId = student.Id;
-
-                    if (CurrentExamS != null)
-                    {
-
-                        stexam.ExamId = exam.Id;
-
-                    }
-                    if (CurrentStudentSEVM != null || CurrentStudentExamSEVM != null)
-                    {
-
-                        GetStudentExamsSEVM();
-
-                        MarkTextS = "";
-
-                    }
-                }
-            }
-
-            stexam.Mark = MarkSEVM;
-            StudentExam examToUpdate = CurrentStudentExamSEVM.Clone();
-
-            var vrstex = examToUpdate.Save();
-
-            if (vrstex.IsSuccess)
-            {
-                MessageBox.Show($"La nota del examen del estudiante se ha editado correctamente");
-                CurrentStudentExamSEVM = vrstex.Entity;
-            }
-            else
-            {
-                MessageBox.Show($"La nota del examen del estudiante no se ha editado correctamente");
 
             }
-            GetStudentExamsSEVM();
 
-            CurrentStudentSEVM = null;
-            CurrentExamS = null;
-            DniS = "";
-            NameS = "";
-            MarkTextS = "";
-            HasCheatedSEVM = false;
 
         }
         public void MarkStringToDoubleS()
         {
             ValidationResult<double> vrmark;
 
-            if (!(vrmark = StudentExam.ValidateMark(this.MarkTextS)).IsSuccess)
+            if (!(vrmark = StudentExam.ValidateMark(this.MarkTextS, CurrentStudentExamSEVM.Id)).IsSuccess)
             {
                 MessageBox.Show(vrmark.AllErrors);
             }
@@ -323,18 +355,18 @@ namespace Academy.App.WPF.ViewsModels
             }
             else
             {
-                if(CurrentStudentExamSEVM == null)
+                if (CurrentStudentExamSEVM == null)
                 {
                     MarkSEVM = vrmark.ValidatedResult;
 
                 }
                 else
                 {
-                    StudentExam examToUpdate = CurrentStudentExamSEVM.Clone();
+                    examToUpdate = CurrentStudentExamSEVM.Clone();
+
                     examToUpdate.Mark = vrmark.ValidatedResult;
                 }
             }
-
         }
 
         public void DelStudentExamsSEVM()
@@ -359,7 +391,7 @@ namespace Academy.App.WPF.ViewsModels
             }
         }
 
-        public void EditStudentExamsSEVM()
+        public void SaveStudentExamsSEVM()
         {
             MarkStringToDoubleS();
 
@@ -410,6 +442,7 @@ namespace Academy.App.WPF.ViewsModels
             if (vrstex.IsSuccess)
             {
                 MessageBox.Show($"La nota del examen del estudiante se ha guardado correctamente");
+                StudentExamsListSEVM = stexam.StudentByExams(stexam.StudentId);
 
             }
             else
@@ -417,25 +450,31 @@ namespace Academy.App.WPF.ViewsModels
                 MessageBox.Show($"La nota del examen del estudiante no se ha guardado correctamente");
 
             }
-            GetStudentExamsSEVM();
 
             CurrentStudentSEVM = null;
             CurrentExamS = null;
             DniS = "";
             NameS = "";
+            TitleS = "";
+            SubjectNameS = "";
+            DateS = default;
             MarkTextS = "";
-            HasCheatedSEVM = false;
+            HasCheatedSEVM = default;
+            this.Id = default;
+
+            // GetStudentExamsSEVM();
         }
 
         private void SelExamSEVM()
         {
+
             Exam exam = new Exam();
             //StudentExam stex = new StudentExam();
             //var stsbVResult = stex.ValidateStudentSubject(CurrentStudentExamSEVM.StudentId, CurrentStudentExamSEVM.ExamId);
             if (CurrentStudentSEVM == null)
             {
                 //MessageBox.Show(stsbVResult.AllErrors);
-                //MessageBox.Show("No hay ningún estudiante seleccionado");
+                MessageBox.Show("No hay ningún estudiante seleccionado");
                 TitleS = "";
                 SubjectNameS = "";
                 DateS = default;
@@ -443,18 +482,15 @@ namespace Academy.App.WPF.ViewsModels
             }
             else
             {
+
                 if (CurrentExamS != null)
                 {
-                    exam = CurrentExamS;
-
                     TitleS = CurrentExamS.Title;
                     SubjectNameS = CurrentExamS.Subject.Name;
                     DateS = CurrentExamS.Date;
                     MarkTextS = "";
                 }
             }
-
-       
         }
 
         private void FindStudentSEVM()
@@ -476,6 +512,7 @@ namespace Academy.App.WPF.ViewsModels
             {
                 MessageBox.Show("Este estudiante no existe.");
                 //Student student = new Student();
+                //_ = CurrentStudentSEVM == student;
                 //StudentExamsListSEVM = new List<StudentExam>();
                 DniS = "";
             }
@@ -483,17 +520,17 @@ namespace Academy.App.WPF.ViewsModels
 
         public void GetStudentExamsSEVM()
         {
-            _ = new Student();
-            _ = new Exam();
+            Student student = new Student();
+            Exam exam = new Exam();
 
             StudentExam studentExam = new StudentExam();
 
             if (CurrentStudentSEVM != null)
             {
 
-                Student student = CurrentStudentSEVM;
+                student = CurrentStudentSEVM;
+                exam = CurrentExamS;
 
-                _ = CurrentExamS;
 
                 studentExam.StudentId = student.Id;
 

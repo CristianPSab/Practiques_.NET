@@ -6,8 +6,8 @@
       "version": "3.0.0"
     },
     "additionalProbingPaths": [
-      "C:\\Users\\formacio\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\formacio\\.nuget\\packages"
+      "C:\\Users\\crpun\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\crpun\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

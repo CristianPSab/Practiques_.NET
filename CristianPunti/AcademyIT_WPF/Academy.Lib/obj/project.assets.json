@@ -180,19 +180,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\formacio\\.nuget\\packages\\": {}
+    "C:\\Users\\crpun\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ITAcademy .NET\\Curso.Net\\Visual Studio\\repoAverage\\AcademyIT_WPF\\Academy.Lib\\Academy.Lib.csproj",
+      "projectUniqueName": "E:\\ITAcademy .NET\\Curso.Net\\Visual Studio\\repoAverage\\AcademyIT_WPF\\Academy.Lib\\Academy.Lib.csproj",
       "projectName": "Academy.Lib",
-      "projectPath": "D:\\ITAcademy .NET\\Curso.Net\\Visual Studio\\repoAverage\\AcademyIT_WPF\\Academy.Lib\\Academy.Lib.csproj",
-      "packagesPath": "C:\\Users\\formacio\\.nuget\\packages\\",
-      "outputPath": "D:\\ITAcademy .NET\\Curso.Net\\Visual Studio\\repoAverage\\AcademyIT_WPF\\Academy.Lib\\obj\\",
+      "projectPath": "E:\\ITAcademy .NET\\Curso.Net\\Visual Studio\\repoAverage\\AcademyIT_WPF\\Academy.Lib\\Academy.Lib.csproj",
+      "packagesPath": "C:\\Users\\crpun\\.nuget\\packages\\",
+      "outputPath": "E:\\ITAcademy .NET\\Curso.Net\\Visual Studio\\repoAverage\\AcademyIT_WPF\\Academy.Lib\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\formacio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\crpun\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -253,7 +253,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

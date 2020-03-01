@@ -1652,19 +1652,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\formacio\\.nuget\\packages\\": {}
+    "C:\\Users\\crpun\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ITAcademy .NET\\Curso.Net\\Visual Studio\\repoAverage\\AcademyIT_WPF\\AcademyIT_WPF\\Academy.App.WPF.csproj",
+      "projectUniqueName": "E:\\ITAcademy .NET\\Curso.Net\\Visual Studio\\repoAverage\\AcademyIT_WPF\\AcademyIT_WPF\\Academy.App.WPF.csproj",
       "projectName": "Academy.App.WPF",
-      "projectPath": "D:\\ITAcademy .NET\\Curso.Net\\Visual Studio\\repoAverage\\AcademyIT_WPF\\AcademyIT_WPF\\Academy.App.WPF.csproj",
-      "packagesPath": "C:\\Users\\formacio\\.nuget\\packages\\",
-      "outputPath": "D:\\ITAcademy .NET\\Curso.Net\\Visual Studio\\repoAverage\\AcademyIT_WPF\\AcademyIT_WPF\\obj\\",
+      "projectPath": "E:\\ITAcademy .NET\\Curso.Net\\Visual Studio\\repoAverage\\AcademyIT_WPF\\AcademyIT_WPF\\Academy.App.WPF.csproj",
+      "packagesPath": "C:\\Users\\crpun\\.nuget\\packages\\",
+      "outputPath": "E:\\ITAcademy .NET\\Curso.Net\\Visual Studio\\repoAverage\\AcademyIT_WPF\\AcademyIT_WPF\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\formacio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\crpun\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1677,11 +1677,11 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "D:\\ITAcademy .NET\\Curso.Net\\Visual Studio\\repoAverage\\AcademyIT_WPF\\Academy.Lib.DAL\\Academy.Lib.DAL.csproj": {
-              "projectPath": "D:\\ITAcademy .NET\\Curso.Net\\Visual Studio\\repoAverage\\AcademyIT_WPF\\Academy.Lib.DAL\\Academy.Lib.DAL.csproj"
+            "E:\\ITAcademy .NET\\Curso.Net\\Visual Studio\\repoAverage\\AcademyIT_WPF\\Academy.Lib.DAL\\Academy.Lib.DAL.csproj": {
+              "projectPath": "E:\\ITAcademy .NET\\Curso.Net\\Visual Studio\\repoAverage\\AcademyIT_WPF\\Academy.Lib.DAL\\Academy.Lib.DAL.csproj"
             },
-            "D:\\ITAcademy .NET\\Curso.Net\\Visual Studio\\repoAverage\\AcademyIT_WPF\\Academy.Lib\\Academy.Lib.csproj": {
-              "projectPath": "D:\\ITAcademy .NET\\Curso.Net\\Visual Studio\\repoAverage\\AcademyIT_WPF\\Academy.Lib\\Academy.Lib.csproj"
+            "E:\\ITAcademy .NET\\Curso.Net\\Visual Studio\\repoAverage\\AcademyIT_WPF\\Academy.Lib\\Academy.Lib.csproj": {
+              "projectPath": "E:\\ITAcademy .NET\\Curso.Net\\Visual Studio\\repoAverage\\AcademyIT_WPF\\Academy.Lib\\Academy.Lib.csproj"
             }
           }
         }
@@ -1735,7 +1735,7 @@
           },
           {
             "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.0.1, 3.0.1]"
+            "version": "[3.0.2, 3.0.2]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
@@ -1754,7 +1754,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -122,7 +122,10 @@ namespace Academy.Lib.Models
             var studentBySubjects = new List<StudentSubject>();
             studentBySubjects = studentSubject.StudentBySubjects(studentId);
 
-            var exam = FindExam(ExamId);
+            var repo = Entity.DepCon.Resolve<IRepository<StudentExam>>();
+            var entityWithDni = repo.QueryAll().FirstOrDefault(s => s.Mark == Mark);
+
+            var exam = FindExam(examId);
 
             if (exam == null)
             {
@@ -139,9 +142,27 @@ namespace Academy.Lib.Models
                 {
                     output.IsSuccess = true;
                 }
+                //Provar d'afegir un else if amb edit. A veure si funciona //Revisar el codi
+                else if (currentId == default && entityWithDni != null && entityWithDni.Id != currentId)
+                {
+                    if (studentId == default)
+                    {
 
+
+                        if (studentSubject == null)
+                        {
+                            if(entityWithDni.Exam == Exam)
+                            {
+                                output.IsSuccess = false;
+                                output.Errors.Add("El estudiante no está matriculado de la asignatura");
+                            }
+                            
+                        }
+                    }
+
+                }
                 //On Create
-                else
+                else if (currentId == default && entityWithDni != null)
                 {
                     if (studentId == default)
                     {
@@ -167,7 +188,7 @@ namespace Academy.Lib.Models
                     }
                 }
             }
-                return output;
+            return output;
         }
 
         public ValidationResult<string> ValidateStudentExam(Guid studentId, Guid examId, Guid currentId = default)
@@ -180,14 +201,33 @@ namespace Academy.Lib.Models
             var studentByExams = new List<StudentExam>();
             studentByExams = StudentByExams(studentId);
 
+            var repo = Entity.DepCon.Resolve<IRepository<StudentExam>>();
+            var entityWithDni = repo.QueryAll().FirstOrDefault(s => s.Mark == Mark);
             //On Delete
             if (currentId != default)
             {
                 output.IsSuccess = true;
             }
+            //On Edit
+            else if (currentId != default && entityWithDni != null && entityWithDni.Id != currentId)
+            {
 
+                if (currentId == default)
+                {
+
+                    if (studentByExams != null && studentByExams.Any(x => x.ExamId == examId))
+                    {
+                        if (entityWithDni.Mark == Mark)
+                        {
+                            output.IsSuccess = false;
+                            output.Errors.Add("Este exámen ya esta registrado.");
+                        }
+                    }
+                }
+
+            }
             //On Create
-            else
+            else if (currentId == default && entityWithDni != null)
             {
                 if (examId == default)
                 {
@@ -204,7 +244,6 @@ namespace Academy.Lib.Models
                     }
                     else
                     {
-                        var repo = DepCon.Resolve<IRepository<StudentSubject>>();
 
                         if (studentByExams != null && studentByExams.Any(x => x.ExamId == examId))
                         {
@@ -248,9 +287,9 @@ namespace Academy.Lib.Models
             }
             #endregion
 
-            if(output.IsSuccess)
+            if (output.IsSuccess)
             {
-                if(mark >= 0 && mark <= 10)
+                if (mark >= 0 && mark <= 10)
                 {
                     output.ValidatedResult = mark;
                 }
@@ -260,7 +299,7 @@ namespace Academy.Lib.Models
                     output.Errors.Add("La nota no es correcta");
                 }
             }
-            
+
 
             return output;
         }
@@ -269,7 +308,7 @@ namespace Academy.Lib.Models
         {
             var output = base.Clone<T>() as StudentExam;
 
-            
+
             output.Mark = this.Mark;
 
             return output as T;

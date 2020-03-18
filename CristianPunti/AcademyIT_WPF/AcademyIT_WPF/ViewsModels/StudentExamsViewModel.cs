@@ -260,49 +260,7 @@ namespace Academy.App.WPF.ViewsModels
                 MarkStringToDoubleS();
 
                 StudentExam stexam = new StudentExam();
-                //Student student = new Student();
-                //Exam exam = new Exam();
-
-                //exam = CurrentExamS;
-                //student = CurrentStudentSEVM;
-
-                //if (MarkSEVM != 0)
-                //{
-                //    if (CurrentStudentExamSEVM != null)
-                //    {
-                //        stexam = CurrentStudentExamSEVM;
-                //    }
-
-                //    stexam.Mark = MarkSEVM;
-
-                //    stexam.HasCheated = HasCheatedSEVM;
-
-                //    if (CurrentStudentSEVM != null)
-                //    {
-
-                //        stexam.StudentId = student.Id;
-
-                //        if (CurrentExamS != null)
-                //        {
-
-                //            stexam.ExamId = exam.Id;
-
-                //        }
-                //        if (CurrentStudentSEVM != null || CurrentStudentExamSEVM != null)
-                //        {
-
-                //            GetStudentExamsSEVM();
-
-                //            MarkTextS = "";
-
-                //        }
-                //    }
-                //}
-
-                //stexam.Mark = MarkSEVM;
-                // StudentExam examToUpdate = CurrentStudentExamSEVM.Clone();
-                // StudentExam examToUpdate = new StudentExam();
-                // examToUpdate.Mark = MarkSEVM;
+    
                 var vrstex = examToUpdate.Save();
 
                 if (vrstex.IsSuccess)
@@ -332,6 +290,10 @@ namespace Academy.App.WPF.ViewsModels
 
 
             }
+            else
+            {
+                MessageBox.Show("Se tiene que seleccionar un examen de un estudiante antes de editarlo");
+            }
 
 
         }
@@ -339,10 +301,20 @@ namespace Academy.App.WPF.ViewsModels
         {
             ValidationResult<double> vrmark;
 
-            if (!(vrmark = StudentExam.ValidateMark(this.MarkTextS, CurrentStudentExamSEVM.Id)).IsSuccess)
+            if (!(vrmark = StudentExam.ValidateMark(this.MarkTextS)).IsSuccess)
             {
                 MessageBox.Show(vrmark.AllErrors);
             }
+
+            if (CurrentStudentExamSEVM != null)
+            {
+                if (!(vrmark = StudentExam.ValidateMark(this.MarkTextS, CurrentStudentExamSEVM.Id)).IsSuccess)
+                {
+                    MessageBox.Show(vrmark.AllErrors);
+                }
+
+            }
+
             if (!vrmark.IsSuccess)
             {
 

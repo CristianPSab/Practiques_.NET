@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NETStandard.Library" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Common.Lib">
+      <HintPath>..\0 Core\Core.Lib\bin\Debug\netstandard2.0\Common.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Lib.DAL.EFCore">
+      <HintPath>..\0 Core\Common.Lib.DAL.EFCore\bin\Debug\netstandard2.0\Common.Lib.DAL.EFCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

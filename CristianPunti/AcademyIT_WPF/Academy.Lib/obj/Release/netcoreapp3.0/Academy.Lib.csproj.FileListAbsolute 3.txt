@@ -1,0 +1,13 @@
+D:\ITAcademy .NET\Curso.Net\Visual Studio\repoAverage\AcademyIT_WPF\Academy.Lib\bin\Release\netcoreapp3.0\Academy.Lib.deps.json
+D:\ITAcademy .NET\Curso.Net\Visual Studio\repoAverage\AcademyIT_WPF\Academy.Lib\bin\Release\netcoreapp3.0\Academy.Lib.dll
+D:\ITAcademy .NET\Curso.Net\Visual Studio\repoAverage\AcademyIT_WPF\Academy.Lib\bin\Release\netcoreapp3.0\Academy.Lib.pdb
+D:\ITAcademy .NET\Curso.Net\Visual Studio\repoAverage\AcademyIT_WPF\Academy.Lib\bin\Release\netcoreapp3.0\Common.Lib.DAL.EFCore.dll
+D:\ITAcademy .NET\Curso.Net\Visual Studio\repoAverage\AcademyIT_WPF\Academy.Lib\bin\Release\netcoreapp3.0\Common.Lib.dll
+D:\ITAcademy .NET\Curso.Net\Visual Studio\repoAverage\AcademyIT_WPF\Academy.Lib\bin\Release\netcoreapp3.0\Common.Lib.pdb
+D:\ITAcademy .NET\Curso.Net\Visual Studio\repoAverage\AcademyIT_WPF\Academy.Lib\bin\Release\netcoreapp3.0\Common.Lib.DAL.EFCore.pdb
+D:\ITAcademy .NET\Curso.Net\Visual Studio\repoAverage\AcademyIT_WPF\Academy.Lib\obj\Release\netcoreapp3.0\Academy.Lib.AssemblyInfoInputs.cache
+D:\ITAcademy .NET\Curso.Net\Visual Studio\repoAverage\AcademyIT_WPF\Academy.Lib\obj\Release\netcoreapp3.0\Academy.Lib.AssemblyInfo.cs
+D:\ITAcademy .NET\Curso.Net\Visual Studio\repoAverage\AcademyIT_WPF\Academy.Lib\obj\Release\netcoreapp3.0\Academy.Lib.csproj.CopyComplete
+D:\ITAcademy .NET\Curso.Net\Visual Studio\repoAverage\AcademyIT_WPF\Academy.Lib\obj\Release\netcoreapp3.0\Academy.Lib.dll
+D:\ITAcademy .NET\Curso.Net\Visual Studio\repoAverage\AcademyIT_WPF\Academy.Lib\obj\Release\netcoreapp3.0\Academy.Lib.pdb
+D:\ITAcademy .NET\Curso.Net\Visual Studio\repoAverage\AcademyIT_WPF\Academy.Lib\obj\Release\netcoreapp3.0\Academy.Lib.csprojAssemblyReference.cache

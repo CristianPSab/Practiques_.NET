@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="Academy.App.WPF.Views.ExamsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Academy.App.WPF.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="#FFE5E5E5">
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" >
+            <Label Content="Title" HorizontalAlignment="Left" Margin="22,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.771,-0.594" Width="78"/>
+            <Label Content="Text" HorizontalAlignment="Left" Margin="22,40,0,0" VerticalAlignment="Top" Width="78"/>
+            <Label Content="Date" HorizontalAlignment="Left" Margin="22,70,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.13,-0.391" Width="78"/>
+            <Label Content="Subject" HorizontalAlignment="Left" Margin="22,100,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.13,-0.391" Width="78"/>
+            <TextBox x:Name="TitleText" Text="{Binding Title}" HorizontalAlignment="Left" Height="23" Margin="125,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" RenderTransformOrigin="0.292,0.209"/>
+            <TextBox x:Name="TextText"  Text="{Binding Text}" HorizontalAlignment="Left" Height="23" Margin="125,40,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="195"/>
+            <DatePicker Margin="125,73,445,54" FirstDayOfWeek="Monday" SelectedDate="{Binding Date}"/>
+            <ComboBox x:Name="ComboBoxSubjects"  HorizontalAlignment="Left" Margin="125,100,0,0"
+                      VerticalAlignment="Top" Width="195" 
+                      ItemsSource="{Binding SubjectsNameList}" DisplayMemberPath="Name"
+                      SelectedItem="{Binding CurrentSubjectEVM}" />
+            <Button Content="REFRESH" Command="{Binding GetSubjectsNameEVCommand}" RenderTransformOrigin="2.496,0.667" Margin="342,113,363,15" />
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="425,0,0,0" Width="375">
+                <Button Height="30" Content="Guardar examen" Command="{Binding AddExamCommand}" Width="112"  />
+                <Button Height="30" Content="Editar examen" Command="{Binding UpdateExamCommand}" Width="124" />
+                <Button Height="30" Content="Eliminar examen" Command="{Binding DeleteExamCommand}" Width="124" />
+            </StackPanel>
+
+        </Grid>
+
+
+        <Grid Grid.Row="1">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <DataGrid x:Name="ExamsDataGrid" Grid.Column="0" ItemsSource="{Binding ExamsListEV}" SelectedItem="{Binding CurrentExamEV}" Margin="5,5,5,5" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Title"  Binding="{Binding Title}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Text"  Binding="{Binding Text}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Date"  Binding="{Binding  Date}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Subject" Binding="{Binding Subject.Name}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="IdExam"  Binding="{Binding  Id}"></DataGridTextColumn>
+                </DataGrid.Columns>
+
+            </DataGrid>
+
+        </Grid>
+        <Grid Grid.Row="2">
+            
+            <Button Content="Obtenir examens" Command="{Binding GetExamsCommand}" Width="100" Margin="0,5,60,5" HorizontalAlignment="Right" RenderTransformOrigin="0.9,3.5" />
+
+        </Grid>
+    </Grid>
+</UserControl>
+
